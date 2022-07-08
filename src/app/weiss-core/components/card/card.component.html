@@ -1,0 +1,11 @@
+<div class="card-container" *ngIf="(card$ | async) as cardObj">
+  <a
+    class="card"
+    target="_blank"
+    rel="noopener"
+    href=""
+  >
+    <img src="{{cardObj.preview}}"/>
+    <span>{{cardObj.title}}</span>
+  </a>
+</div>
